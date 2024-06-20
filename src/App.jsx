@@ -2,6 +2,7 @@ import './App.css'
 import HelloWorld from './components/HelloWorld'
 import SayMyName from './components/SayMyName'
 import Pessoa from './components/Pessoa'
+import List from './components/List'
 
 
 function App() {
@@ -21,11 +22,14 @@ function App() {
     
     {/*Varias props dentro de um componente e desestruturadas*/}
     <Pessoa
-      nome= "João" 
+      nome= "João"
       foto= {pic150x} 
       profissao="Lenhador"
       idade="28" 
     />
+
+    {/*Temos que importar o prop-types que ja é nativo do react, temos defaultProps e isRequired*/}
+    <List/>
 
     </>
   )
