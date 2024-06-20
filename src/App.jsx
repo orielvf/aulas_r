@@ -31,6 +31,8 @@ function App() {
     {/*Temos que importar o prop-types que ja é nativo do react, temos defaultProps e isRequired*/}
     <List/>
 
+    {/*Recebi um Warning que o metodo de implementar props mudou*/}
+
     </>
   )
 }
