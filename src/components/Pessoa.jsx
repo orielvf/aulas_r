@@ -1,4 +1,4 @@
-function Pessoa({nome, foto, profissao, idade}) {
+export function Pessoa({nome, foto, profissao, idade}) {
     return (
         <>
         <img src={foto} alt={nome}/>
@@ -8,5 +8,3 @@ function Pessoa({nome, foto, profissao, idade}) {
         </>
     )
 }
-
-export default Pessoa

@@ -1,6 +1,6 @@
 import Item from './Item'
 
-function List() {
+export function List() {
     return(
         <>
         <h1>Minha Lista</h1>
@@ -13,4 +13,3 @@ function List() {
         </>
     )
 }
-export default List
