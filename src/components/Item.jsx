@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-function Item({marca, ano_lacamento}) {
+function Item({marca ='faltou marca', ano_lacamento = 0}) {
     return (
         <>
         <li>{marca} - {ano_lacamento}</li>
@@ -16,8 +16,5 @@ Item.propTypes={
     ano_lancamento: PropTypes.number,
 }
 
-Item.defaultProps={
-    marca: 'faltou a marca',
-    ano_lacamento: 0,
-}
+
    
