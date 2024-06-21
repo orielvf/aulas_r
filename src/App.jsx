@@ -3,6 +3,7 @@ import HelloWorld from './components/HelloWorld'
 import SayMyName from './components/SayMyName'
 import Pessoa from './components/Pessoa'
 import List from './components/List'
+import Evento from './components/Evento'
 
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
     <List/>
 
     {/*Recebi um Warning que o metodo de implementar props mudou*/}
+
+    {/*Eventos: podemos mater eles com o preventDefault com um 'e' é util pelo fluxo do SPA*/}
+    <Evento/>
 
     </>
   )
