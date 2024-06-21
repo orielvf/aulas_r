@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types'
 
-export function Item({marca ='faltou marca', ano_lacamento = 0}) {
+function Item({marca ='faltou marca', ano_lancamento = 0}) {
     return (
         <>
-        <li>{marca} - {ano_lacamento}</li>
+        <li>{marca} - {ano_lancamento}</li>
         </>
     )    
 }
@@ -14,5 +14,5 @@ Item.propTypes={
     ano_lancamento: PropTypes.number,
 }
 
-
+export default Item
    
