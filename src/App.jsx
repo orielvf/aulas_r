@@ -5,7 +5,7 @@ import Pessoa from './components/Pessoa'
 import List from './components/List'
 import Evento from './components/Evento'
 import Form from './components/Form'
-
+import EventoParaButton from './components/eventosPorProps/EventoParaButton'
 
 function App() {
   const nome = "maria"
@@ -42,6 +42,8 @@ function App() {
 
     {/*devemos usar um label no form para melhorar a assecibilidade*/}
     <Form/>
+
+    <EventoParaButton/>
 
     </>
   )
