@@ -4,6 +4,7 @@ import SayMyName from './components/SayMyName'
 import Pessoa from './components/Pessoa'
 import List from './components/List'
 import Evento from './components/Evento'
+import Form from './components/Form'
 
 
 function App() {
@@ -29,13 +30,18 @@ function App() {
       idade="28" 
     />
 
-    {/*Temos que importar o prop-types que ja é nativo do react, temos defaultProps e isRequired*/}
+    {/*Temos que importar o prop-types que ja é nativo do react, temos 
+    defaultProps e isRequired*/}
     <List/>
 
     {/*Recebi um Warning que o metodo de implementar props mudou*/}
 
-    {/*Eventos: podemos mater eles com o preventDefault com um 'e' é util pelo fluxo do SPA*/}
+    {/*Eventos: podemos mater eles com o preventDefault com um 'e' é util pelo 
+    fluxo do SPA*/}
     <Evento/>
+
+    {/*devemos usar um label no form para melhorar a assecibilidade*/}
+    <Form/>
 
     </>
   )
