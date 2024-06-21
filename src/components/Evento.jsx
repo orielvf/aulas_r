@@ -5,8 +5,8 @@ function Evento(){
     }
     return(
         <>
-        <p>Clique para disparar um evento</p>
-        <form onSubmit={meuEvento}>Form
+        <p>Teste de eventos</p>
+        <form onSubmit={meuEvento}>
             <p></p>
             <input type="text" placeholder="digite aqui"/>text
             <p></p>
