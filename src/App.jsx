@@ -1,4 +1,5 @@
 import './App.css'
+import {useState} from 'react'
 import HelloWorld from './components/HelloWorld'
 import SayMyName from './components/SayMyName'
 import Pessoa from './components/Pessoa'
@@ -8,6 +9,8 @@ import Form from './components/Form'
 import EventoParaButton from './components/eventosPorProps/EventoParaButton'
 import Render from './components/RenderizacaoCondicional/Render'
 import RenderizacaoDeListas from './components/RenderizacaoDeListas/RenderizacaoDeListas'
+import LiftNome from './components/StateLift/LiftNome'
+import LiftSaldacao from './components/StateLift/LiftSaldacao'
 
 
 function App() {
@@ -15,6 +18,7 @@ function App() {
   const pic150x = "https://via.placeholder.com/150"
   const array = ["Maça", "Laranja"]
   const arrayEmpty = []
+  const [lift,setLift] = useState()
 
   return (
     <>
@@ -45,6 +49,8 @@ function App() {
     <RenderizacaoDeListas titulo="Renderização de lista" lista={array}/>
     <RenderizacaoDeListas titulo="Com lista vazia"lista={arrayEmpty}/>
     <RenderizacaoDeListas titulo="Sem array"/>
+    <LiftNome titulo="State Lift" setNome={setLift}/>
+    <LiftSaldacao nome={lift}/>
     </>
   )
 }
