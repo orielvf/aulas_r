@@ -7,11 +7,14 @@ import Evento from './components/Evento'
 import Form from './components/Form'
 import EventoParaButton from './components/eventosPorProps/EventoParaButton'
 import Render from './components/RenderizacaoCondicional/Render'
+import RenderizacaoDeListas from './components/RenderizacaoDeListas/RenderizacaoDeListas'
 
 
 function App() {
   const nome = "maria"
   const pic150x = "https://via.placeholder.com/150"
+  const array = ["Maça", "Laranja"]
+  const arrayEmpty = []
 
   return (
     <>
@@ -38,7 +41,10 @@ function App() {
     {/*devemos usar um label no form para melhorar a assecibilidade*/}
     <Form/>
     <EventoParaButton/>
-    <Render/>    
+    <Render/>
+    <RenderizacaoDeListas titulo="Renderização de lista" lista={array}/>
+    <RenderizacaoDeListas titulo="Com lista vazia"lista={arrayEmpty}/>
+    <RenderizacaoDeListas titulo="Sem array"/>
     </>
   )
 }
