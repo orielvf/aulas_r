@@ -11,8 +11,8 @@ function EventoParaButton(){
     return(
         <>
         <h1>Eventos por Props</h1>
-        <Button event={primeiroEvento} text="Primeiro Evento"></Button>
-        <Button event={segundoEvento} text="Segundo Evento"></Button>
+        <Button evento={primeiroEvento} texto="Primeiro Evento"></Button>
+        <Button evento={segundoEvento} texto="Segundo Evento"></Button>
         
         </>
     )

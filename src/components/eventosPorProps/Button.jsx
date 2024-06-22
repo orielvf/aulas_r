@@ -1,6 +1,6 @@
-function Button({text, event}){
+function Button({texto, evento, tipo}){
     const coment ="botão responsivo para evento e texto"
-    return <button onClick={event}>{text}</button>    
+    return <button type={tipo}onClick={evento}>{texto}</button>    
 }
 export default Button
 
