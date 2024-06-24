@@ -11,6 +11,8 @@ import Render from './components/RenderizacaoCondicional/Render'
 import RenderizacaoDeListas from './components/RenderizacaoDeListas/RenderizacaoDeListas'
 import LiftNome from './components/StateLift/LiftNome'
 import LiftSaldacao from './components/StateLift/LiftSaldacao'
+// reaproveitamento de estrutura
+import {Outlet} from "react-router-dom"
 
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
 
   return (
     <>
+    <Outlet/>
     {/*Componente basico com hello world*/}
     <HelloWorld/>
     {/*componente usando props*/}
